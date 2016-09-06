@@ -2,13 +2,10 @@ import java.io.Console;
 
 public class Shipping {
   public static void main(String[] args) {
-    shippingCost("weight");
-    shippingCost("travel distance");
-  }
-  public static void shippingCost(String shipping) {
     Console myConsole = System.console();
-    System.out.println("What is your package's  " + shipping + " ?");
+    System.out.println("What is your package's shipping weight ?");
     String yourPackageWeight = myConsole.readLine();
+    System.out.println("What is your package's shipping distance ?");
     String yourPackageDistance = myConsole.readLine();
     Integer yourNewPackageWeight = Integer.parseInt(yourPackageWeight);
     Integer yourNewPackageDistance = Integer.parseInt(yourPackageDistance);
